@@ -1,28 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <header class="header">
+      <img class="header__logo" src="@/assets/img/spacex.svg" alt="logo">
+      <h1 class="header__title">
+        Space <span class="header__title_white">X</span>
+        <span class="header__title_newline">Missions</span>
+      </h1>
+    </header>
+    <section class="flight-list">
+      <card :cards="data"/>
+    </section>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Card from './components/Card.vue'
+
+import main from '@/mock/main.json';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Card,
+  },
+  data() {
+    return {
+      data: Object.freeze(main.cards),
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+@import './assets/scss/main';
+
+@include mobile {
+  .header {
+    height: auto;
+
+    &__title {
+      font-weight: 300;
+      font-size: 120px;
+      line-height: 90%;
+    }
+  }
 }
 </style>

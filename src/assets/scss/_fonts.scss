@@ -1,0 +1,26 @@
+
+@font-face {
+  font-family: 'Teko';
+  font-weight: 400;
+  font-display: swap;
+  src: url('~@/assets/fonts/Teko-Regular.woff2') format('woff2'),
+       url('~@/assets/fonts/Teko-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('~@/assets/fonts/Teko-Light.woff2') format('woff2'),
+       url('~@/assets/fonts/Teko-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~@/assets/fonts/Ubuntu-Regular.woff2') format('woff2'),
+       url('~@/assets/fonts/Ubuntu-Regular.woff') format('woff');
+}

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {
+  font-family: 'Teko', sans-serif;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  background: #000000 url('./static/img/cosmonaut.png') no-repeat;
+  background-position-x: 50%;
+  font-size: 18px;
+  white-space: pre-line;
+}
+h1, h2, h3 {
+  line-height: 100%;
+}
